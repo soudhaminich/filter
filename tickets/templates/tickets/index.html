@@ -1,0 +1,306 @@
+{% load bootstrap %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  -->
+    <title>Teckiy</title>
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" href="{% static 'css/homepage4styles.css' %}">
+    <!-- <link rel="stylesheet" href="navigationbar/styles3.css"> -->
+    <link rel="icon" href="images/iconfinder_icon-111-search_314478.svg">
+    <link rel="fbicon" href="images/facebook-icon.svg">
+    <link rel="tweeticon" href="images/twitter-icon.svg">
+    <link rel="youtubeicon" href="images/youtube-icon.svg">
+    <!-- <script src="https://kit.fontawesome.com/c6620905da.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <div class="container-fluid parent-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div>
+                <div class="nav-left">
+                    <button class="navbar-toggler btn-padding" type="button" data-toggle="collapse"
+                        data-target="#navbarNav">
+                        <span class="navbar-toggler-icon ic-size"></span>
+                    </button>
+                    <a href=""><img class="navbar-logo"
+                            src="https://www.teckiy.com/static/blogs/images/teckiy.eb0a7a1566ca.png"
+                            alt="teckiy-logo"></a>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse order-1 order-lg-0 mr" id="navbarNav">
+                <ul class="navbar-nav nav-ul">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item pcds-display">
+                        <a class="nav-link" href="#">Posts</a>
+                    </li>
+                    <li class="nav-item pcds-display">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item pcds-display">
+                        <a class="nav-link" href="#">Donate</a>
+                    </li>
+                    <li class="nav-item pcds-display">
+                        <a class="nav-link" href="#">Suggestions</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="search-box-form mx-auto">
+                <input class="form-control search-box" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <span class="nav-right ml-auto">
+                <a href="#">
+                    <img class="search-icon search-btn d-md-none" id="click-search"
+                        src="images/iconfinder_icon-111-search_314478.svg" alt="">
+                </a>
+                <button type="button" class="btn btn-primary login-hp fs">Log in</button>
+                <button type="button" class="btn btn-primary signup-hp fs">Sign up</button>
+            </span>
+        </nav>
+        <div>
+            <form id="appear-search-bar">
+                <input class="form-control d-md-none mx-auto" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <div>
+                <form method="GET">
+                    {{filter.form|bootstrap}}
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Page Content Design -->
+
+        <div class="left-fixed-section fixed-top left-fixed-section-hp ">
+            <ul id="left-nav-links-list" class="left-navitems left-navitems-hp">
+                <li class="left-nav-links"><a href="#">Posts</a></li>
+                <li class="left-nav-links"><a href="#">Courses</a></li>
+                <li class="left-nav-links"><a href="#">Donate</a></li>
+                <li class="left-nav-links"><a href="#">Suggestions</a></li>
+            </ul>
+
+        </div>
+
+        <!-- QUESTION HEADING -->
+        <div class="row right-scrollable-section right-scrollable-section-hp">
+            <div class="description-box-left-column des-box-left-col">
+                <div class="ques-user-img top-sctn-hp">
+                    <h1 class="all-quest-fl">All Questions</h1>
+                    <button type="button" class="btn btn-primary ask-a-quest-btn">Ask Question</button>
+                </div>
+                <hr>
+                <div class="row row-sctn-hp">
+                    <div class="col-2 stats-col">
+                        <div class="stats-view fs">
+                            <span class="text-muted">Priority:</span>
+                            <span class="text-muted">low</span>
+                        </div>
+                        <div class="text-muted stats-view fs">10 Views</div>
+                    </div>
+                    <div class="col-9 descriptive-col">
+                        <a class="quest-head-hp" href="">Data Structue node, links </a>
+                        <p class="quest-sctn fs">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sit amet architecto
+                            voluptas
+                            nihil aliquid, magnam placeat qui esse quaerat rem neque odit unde quis repellendus
+                            impedit
+                            aliquam fugit itaque!
+                        </p>
+                        <div class="submit-status-margin tag-name">
+                            <span class="text-muted submit-status tags">
+                                <a href="" class="sh-ed-td">C</a>
+                            </span>
+                        </div>
+                        <div class="submit-status-margin tag-name">
+                            <span class="text-muted submit-status tags">
+                                <a href="" class="sh-ed-td">DataStructures</a>
+                            </span>
+                        </div>
+                        <div class="name-footer-hp">
+                            <div class="text-muted footer-submit">
+                                asked Jan 2 at 11:00
+                            </div>
+                            <div>
+                                 <img class="rounded-circle img-name" src="">
+                            </div>
+                            <div>
+                                <a href=""
+                                    class="user-name fs text-muted img-name">User_Name</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="hr-mt-hp">
+
+                <div class="row row-sctn-hp">
+                    <div class="col-2 stats-col">
+                        <div class="stats-view fs">
+                            <span class="text-muted">Priority:</span>
+                            <span class="text-muted">Urgent</span>
+                        </div>
+                        <div class="text-muted stats-view fs">10 Views</div>
+                    </div>
+                    <div class="col-9 descriptive-col">
+                        <a class="quest-head-hp" href="">Data Structue node, links </a>
+                        <p class="quest-sctn fs">
+                            Lorem ipsum
+                        </p>
+                        <div class="">
+                            <div class="submit-status-margin tag-name">
+                                <span class="text-muted submit-status tags">
+                                    <a href="" class="sh-ed-td">Python</a>
+                                </span>
+                                <span class="text-muted submit-status tags">
+                                    <a href="" class="sh-ed-td">C</a>
+                                </span>
+                                <span class="text-muted submit-status tags">
+                                    <a href="" class="sh-ed-td">JavaScript</a>
+                                </span>
+                            </div>
+                            <div class="name-footer-hp">
+                                <div class="text-muted footer-submit">
+                                    asked Jan 1 at 11:00
+                                </div>
+                                <div>
+                                    <img class="rounded-circle img-name" src="">
+                                </div>
+                                <div>
+                                    <a href=""
+                                        class="user-name fs text-muted img-name">User_Name</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="hr-mt-hp">
+
+                <!-- PAGINATION -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination pagination-sm pagination-ml">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item-ml page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item-ml page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item-ml page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item-ml page-item">
+                            <a class="page-link" href="# " aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- end of support -->
+            <div class="right-column">
+                <div class="features-mb">
+                    <div class="priority">
+                        <h4 class="priority-heading">Priority</h4>
+                        <p class="priority-des fs">Teckiy Developer will help you based on Ticket Priority</p>
+                    </div>
+                    <div class="priority">
+                        <h4 class="priority-heading">Guide</h4>
+                        <p class="priority-des fs">Teckiy Developer will help you based on Ticket Priority</p>
+                    </div>
+                    <div class="priority">
+                        <h4 class="priority-heading">Meeting</h4>
+                        <p class="priority-des fs">Teckiy Developer will help you based on Ticket Priority</p>
+                    </div>
+                    <div class="priority learn-border-bottom">
+                        <h4 class="priority-heading">Learn & Earn</h4>
+                        <p class="priority-des fs">Teckiy Developer will help you based on Ticket Priority</p>
+                    </div>
+                </div>
+
+                <!-- BLOG section -->
+                <div class="blog-hp fs" style="background-color: white;">
+                    <h4 class="blog-heading">Blog</h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sit amet architecto
+                    voluptas
+                    nihila liquid magnamh
+                    placeat qui esse quaerat rem neque odit unde quis repellendus impedit aliquam fugit
+                    itaque!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim doloremque laboriosam eos quod,
+                    tempora unde facilis repudiandae magni illum quam nobis perspiciatis quasi consequatur ab
+                    eveniet maiores doloribus, quo ea.
+                </div>
+
+            </div>
+        </div>
+    
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="links">
+                <a class="footer-link" href="#">About</a>
+                <a class="footer-link" href="#">Policy</a>
+                <a class="footer-link" href="#">Contact Us</a>
+            </div>
+
+            <div class="icon-links">
+                <a href="#"><img class="fb-footer-icon" src="images/facebook-icon.svg" alt=""></a>
+                <a href="#"><img class="fb-footer-icon" src="images/twitter-icon.svg" alt=""></a>
+                <a href="#"><img class="fb-footer-icon" src="images/youtube-icon.svg" alt=""></a>
+            </div>
+            <div class="copyright">&copy; Copyright <span id="copyright-year"></span></div>
+
+            <div class="ko-fi-div">
+                <button class="ko-fi">
+                    <img class="ko-fi-img" src="https://storage.ko-fi.com/cdn/cup-border.png" alt="">
+                    Support us on Ko-fi
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("click-search").onclick = function () {
+            var srchBar = document.getElementById("appear-search-bar");
+            if (srchBar.style.display == "block") {
+                srchBar.style.display = "none";
+            } else {
+                srchBar.style.display = "block";
+            }
+        }
+        // Copyright-Year Update
+        document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+    </script>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Optional JavaScript -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
